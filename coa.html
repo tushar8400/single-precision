@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Single Precision Format</title>
+  <link rel="stylesheet" href="coa.css">
+</head>
+<body>
+  <div class="container">
+    <h1>IEEE 754 Single Precision Format</h1>
+    <p>
+      The IEEE 754 single precision format is a 32-bit representation of a floating-point number.
+      It is divided into three parts:
+    </p>
+    <ul>
+      <li><strong>Sign (1 bit):</strong> Determines if the number is positive (0) or negative (1).</li>
+      <li><strong>Exponent (8 bits):</strong> Encoded using a bias of 127.</li>
+      <li><strong>Mantissa (23 bits):</strong> Represents the fractional part with an implicit leading 1.</li>
+    </ul>
+
+    <div class="converter">
+      <h2>Decimal to IEEE 754 Converter</h2>
+      <input type="number" id="inputNumber" placeholder="Enter a decimal number">
+      <button id="convertBtn">Convert</button>
+      <div id="result"></div>
+    </div>
+  </div>
+  <script src="coa.js"></script>
+</body>
+</html>
